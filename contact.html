@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+    <head>
+        <meta charset="UTF-8">
+        <title>Kalles motorsågar kontaktsida</title>
+        <meta name="Keywords" content="HTML, Motorsågar, Chainsaw, DIY">
+        <meta name="Description" content="Tveka inte inför att kontakta oss - inga frågor är för dumma!">
+        <meta name="Author" content="Magnus Quist">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link href="style.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a title="Kalles motorsågar Startsida" href="index.html">Startsida</a>
+                <a class="active" title="Kalles motorsågar Kontaktsida" href="contact.html">Kontakt</a>
+                <a title="Kalles motorsågar Galleri" href="gallery.html">Galleri</a>
+                <a title="Kalles motorsågar populärkultur" href="popular-culture.html">Populärkultur</a>
+            </nav>
+        </header>
+        <main>
+            <h3>Kontaktformulär</h3>
+            <div class="form">
+                <form action="mailto:info@kalles.com" method="post" enctype="text/plain">
+                    <label for="firstname">Förnamn</label><input type="text" id="firstname" placeholder="Skriv ditt förnamn här...">
+                    <label for="lastname">Efternamn</label><input type="text" id="lastname" placeholder="Skriv ditt efternamn här...">
+                    <label for="email">E-postadress</label><input type="text" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required placeholder="Ange din E-postadress här...">
+                    <label for="country">Land</label><select id="country">
+                        <option value="sweden">Sverige</option>
+                        <option value="norway">Norge</option>
+                        <option value="denmark">Danmark</option>
+                    </select>
+                    <label for="subject">Meddelande</label><textarea id="subject" placeholder="Skriv ditt meddelande här..." style="height:200px"></textarea>
+                    <input type="submit" value="Skicka">
+                  </form>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <div class="footerRow">
+                <div class="footerColumn">
+                    <div id="contact">
+                        <h3>Kalles Motorsågar AB</h3>
+                        <p>c/o EC Utbildning AB<br>Framtidsvägen 10A, 352 57 Växjö<br>Tel: 012-345 67 89<br><a href="mailto:info@kalles.com">info@kalles.com</a></p>
+                    </div>               
+                </div>
+                <div class="footerColumn">
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8725.663745123828!2d14.8248671!3d56.8559617!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x463e65112fbbf5cc!2sEC%20Utbildning%20AB!5e0!3m2!1sen!2sse!4v1572799063236!5m2!1sen!2sse"></iframe>
+                    </div>
+                </div>
+                <div class="footerColumn">
+                    <div id="socialMedia">
+                        <a href="https://www.facebook.com/DonaldTrump/"><img src="Media/facebook_icon.png" alt="Facebook" class="icon"></a>
+                        <a href="https://twitter.com/realDonaldTrump"><img src="Media/twitter_icon.png" alt="Twitter" class="icon"></a>
+                        <a href="https://www.instagram.com/realdonaldtrump"><img src="Media/instagram_icon.png" alt="Instagram" class="icon"></a>
+                    </div>
+                </div>
+            </div>
+            <div id="footerLast">
+                <p>© 2019 Kalles Motorsågar - All Rights Reserved</p>
+            </div>        
+        </footer>    
+    </body>
+</html>
